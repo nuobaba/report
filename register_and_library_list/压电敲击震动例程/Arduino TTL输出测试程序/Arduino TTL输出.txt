@@ -1,0 +1,20 @@
+int ledPin = 12;                // 定义LED为 pin 12
+int switch0 =  2;                 // 定义传感器 为 Pin2
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);      // 设置数字端口12为输出模式
+  pinMode(switch0, INPUT);       // 设置数字端口2为输入模式
+}
+void loop()
+{
+    
+   if(digitalRead(switch0)==HIGH)
+     { 
+        digitalWrite(ledPin, HIGH);   // 数字端口置高，LED亮
+     }
+   else
+     {
+        digitalWrite(ledPin, LOW);    // 数字端口置低，LED灭
+     }
+}
