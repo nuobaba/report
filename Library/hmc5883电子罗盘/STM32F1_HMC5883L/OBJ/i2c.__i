@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\CORE -I..\STM32_FWLIB\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\LED -I..\I2C -I..\HMC5883L -I "D:\Program Files\Keil\ARM\INC" -I "D:\Program Files\Keil\ARM\INC\ST\STM32F10x" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\i2c.o" --omf_browse "..\OBJ\i2c.crf" --depend "..\OBJ\i2c.d" "..\I2C\I2C.c"
